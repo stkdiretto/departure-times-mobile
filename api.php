@@ -40,7 +40,7 @@
 // Read GET Params:
 $maxBus = ($_GET['limit']);
 //$maxBus = 1;
-$id = "900".($_GET['id']);
+$id = ($_GET['id']);
 $platform = ($_GET['platform']);
 if (!$platform) {
 	$platform = false;
@@ -56,7 +56,7 @@ if (!$platform) {
 
 
 // Configuration:
-// error message in case ding servers a down:
+// error message in case ding servers are down:
 $errormsg['line'] = "&nbsp;";
 $errormsg['direction'] = "DING Server not reachable";
 $errormsg['countdown'] = "&nbsp;";

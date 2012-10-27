@@ -8,7 +8,7 @@
 <script type="text/javascript">
 	function createurl() {
 		if (document.getElementById("stopid").selectedIndex) {
-			window.location = ""+selectWert(document.getElementById("stopid"));
+			window.location = "list.php?id="+selectWert(document.getElementById("stopid"));
 		}
 	}
 
@@ -23,7 +23,12 @@
 	<div class="head">
 		<h1>Busabfahrtszeiten</h1>
 	</div>
+	
+
 	<div class="content">
+
+	<div class="button" style="float: left"><img src="img/icon_pin.png"><br />Umgebung</div>
+	<div class="button" style="width: 35%; float: right"><img src="img/icon_fav.png"><br />Favoriten</div>
 
 	<?php
 	echo file_get_contents("haltestellendropdown.htm");

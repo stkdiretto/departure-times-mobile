@@ -21,8 +21,8 @@
 	<div class="head">
 		<table>
 			<tr>
-				<td id="stopname">Datalove &lt;3</td>
-				<td id="timestamp">21:12</td>
+				<td id="stopname"><a href="/">Please wait, loving data &lt;3</a></td>
+				<td id="timestamp">13:37</td>
 			</tr>
 
 		</table>
@@ -40,8 +40,8 @@
 		<div id="load"><img src="img/load.gif"></div>
 	</div>
 	<div class="foot">
-		Echtzeitdaten <img class="realtime" src="img/realtime.png"><br>
-		Fahrplandaten <img class="realtime" src="img/norealtime.png"><br><br>
+		Echtzeitdaten: <img class="realtime" src="img/realtime.png"><br>
+		Fahrplandaten: <img class="realtime" src="img/norealtime.png"><br><br>
 		HSG Datalove<br><a href="http://www.ulmapi.de/">www.ulmapi.de</a> :: <a href="mailto:datalove@lists.uni-ulm.de">Kontakt</a> :: <a href="https://github.com/UlmApi/departure-times-mobile">Sourcecode</a> 
 <?php
 		echo " :: <a href=\"qr.php?id=$id&platform=$platform\">QR-Code</a>";

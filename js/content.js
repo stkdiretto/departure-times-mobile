@@ -15,8 +15,10 @@ function updateBus(url) {
 		// data arrived => kill the load.gif
 		document.getElementById("load").style.display = 'none';
 		// Time and Stopname
-		document.getElementById("stopname").innerHTML = data.info.stopname;
-		document.getElementById("timestamp").innerHTML = data.info.timestamp+ " Uhr";
+		if (data.info.stopname) { // TODO FIX THIS
+			document.getElementById("stopname").innerHTML = data.info.stopname;
+			document.getElementById("timestamp").innerHTML = data.info.timestamp+ " Uhrs"; }
+		else { document.getElementById("stopname").innerHTML = "ups"; }
 		i = 0;
 		$.each(data.departures, function(key, deps){
 			i++;
